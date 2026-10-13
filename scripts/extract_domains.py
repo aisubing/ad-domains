@@ -4,7 +4,8 @@
 处理逻辑：
   1. 下载源列表（https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdnslite.txt）；
   2. 解析 `||example.com^` 屏蔽规则与 `@@||example.com^` 白名单规则，校验域名合法性；
-  3. 生成域名列表文件（首行为 “# Updated: ...” 时间标识，其余每行一个纯域名）：
+  3. 生成域名列表文件（首行为 “# Updated: ... | Domains: N | ...” 元信息，
+     含更新时间、域名数量与源版本号，其余每行一个纯域名）：
      - ad-domains.txt：从屏蔽列表中剔除（“如果存在”）：
        * 与白名单条目完全相同；
        * 是某个白名单条目的子域名；
@@ -244,15 +245,18 @@ def main() -> None:
         raise SystemExit(f"Lite 域名数 {len(lite)} 较上次 {prev_lite} 跌幅超过 {DROP_RATIO:.0%}，疑似源异常，已中止。")
 
     generated_at = datetime.now(timezone.utc)
-    header_line = f"# Updated: {generated_at:%Y-%m-%d %H:%M} UTC"
-    if header.get("Version"):
-        header_line += f" | Source version: {header['Version']}"
+
+    def build_header(count: int) -> str:
+        line = f"# Updated: {generated_at:%Y-%m-%d %H:%M} UTC | Domains: {count}"
+        if header.get("Version"):
+            line += f" | Source version: {header['Version']}"
+        return line
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     changed = (
-        write_list_if_changed(OUTPUT_DIR / "ad-domains.txt", final, header_line)
-        | write_list_if_changed(OUTPUT_DIR / "ad-domainslite.txt", lite, header_line)
-        | write_list_if_changed(OUTPUT_DIR / "ad-whitelist.txt", sorted(whitelisted), header_line)
+        write_list_if_changed(OUTPUT_DIR / "ad-domains.txt", final, build_header(len(final)))
+        | write_list_if_changed(OUTPUT_DIR / "ad-domainslite.txt", lite, build_header(len(lite)))
+        | write_list_if_changed(OUTPUT_DIR / "ad-whitelist.txt", sorted(whitelisted), build_header(len(whitelisted)))
     )
 
     stats = {
