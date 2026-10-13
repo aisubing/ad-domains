@@ -60,8 +60,7 @@ GitHub Actions 定时任务（见 [.github/workflows/sync.yml](.github/workflows
 
 - 每天北京时间 **02:00**（UTC 18:00）自动运行，**仅当域名内容有变化时才提交**（首行时间标识随内容更新刷新，无变化的日子不产生提交）；
 - 也支持手动触发：仓库页面 **Actions → Sync Domains → Run workflow**；
-- 修改脚本或 workflow 后 push 也会自动运行一次，便于验证改动；
-- 内置 [keepalive-workflow](https://github.com/gautamkrishnar/keepalive-workflow)，防止 GitHub 因"仓库 60 天无活动"停用定时任务。
+- 修改脚本或 workflow 后 push 也会自动运行一次，便于验证改动。
 
 如需修改同步时间，调整 `sync.yml` 中的 `cron`（注意是 UTC，北京时间需减 8 小时）。
 

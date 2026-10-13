@@ -1,9 +1,10 @@
 name: Sync Domains
 
 on:
-  # 每日定时（UTC 18:00 = 北京时间次日凌晨 02:00）——首次运行验证通过后再取消注释启用
-  # schedule:
-  #   - cron: "0 18 * * *"
+  schedule:
+    # GitHub Actions 定时任务使用 UTC：每天 18:00 UTC = 北京时间次日凌晨 02:00。
+    # 源列表每 8 小时更新一次，如需更高同步频率可自行修改。
+    - cron: "0 18 * * *"
   workflow_dispatch: {}
   push:
     paths:
@@ -45,7 +46,3 @@ jobs:
             git commit -m "chore(sync): $(date -u +%F) 共 ${count} 个域名"
             git push
           fi
-
-      # GitHub 会在仓库连续 60 天无活动后自动停用定时任务，此步骤用于保活
-      - name: Keepalive
-        uses: gautamkrishnar/keepalive-workflow@v2
