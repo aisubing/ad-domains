@@ -1,0 +1,51 @@
+name: Sync Domains
+
+on:
+  # 每日定时（UTC 18:00 = 北京时间次日凌晨 02:00）——首次运行验证通过后再取消注释启用
+  # schedule:
+  #   - cron: "0 18 * * *"
+  workflow_dispatch: {}
+  push:
+    paths:
+      - "scripts/**"
+      - ".github/workflows/sync.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-domains
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-26.04
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Extract domains
+        run: python scripts/extract_domains.py
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add output/
+          if git diff --staged --quiet; then
+            echo "输出无变化，跳过提交"
+          else
+            count=$(python -c 'import json; print(json.load(open("output/stats.json"))["counts"]["final_domains"])')
+            git commit -m "chore(sync): $(date -u +%F) 共 ${count} 个域名"
+            git push
+          fi
+
+      # GitHub 会在仓库连续 60 天无活动后自动停用定时任务，此步骤用于保活
+      - name: Keepalive
+        uses: gautamkrishnar/keepalive-workflow@v2

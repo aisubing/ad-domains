@@ -1,0 +1,49 @@
+{
+  "source_url": "https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdnslite.txt",
+  "source_version": "20261013141915",
+  "source_last_modified": "2026/10/13 14:19:15",
+  "generated_at": "2026-10-13T08:41:32Z",
+  "counts": {
+    "source_lines": 8456,
+    "skipped_lines": 0,
+    "blocked": 8429,
+    "whitelist": 17,
+    "removed_exact": 4,
+    "removed_subdomain": 0,
+    "removed_parent": 2,
+    "final_domains": 8423,
+    "lite_domains": 8183,
+    "removed_related": 246
+  },
+  "removed": {
+    "exact": [
+      "ad.ourgame.com",
+      "sax.sina.com.cn",
+      "sobot.com",
+      "wan.douyu.com"
+    ],
+    "subdomain_of_whitelist": [],
+    "parent_of_whitelist": [
+      "doubleclick.net",
+      "googleadservices.com"
+    ]
+  },
+  "whitelist_base_domains": [
+    "baidu.com",
+    "daraz.com.bd",
+    "daraz.pk",
+    "doubleclick.net",
+    "douyu.com",
+    "googleadservices.com",
+    "ifengimg.com",
+    "kf5.com",
+    "lenovo.com",
+    "mmstat.com",
+    "ourgame.com",
+    "porn300.com",
+    "sina.com.cn",
+    "sobot.com",
+    "taobao.com",
+    "zhihuishu.com"
+  ]
+}
