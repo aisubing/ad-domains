@@ -1,12 +1,10 @@
-# Updated: 2026-10-13 08:58 UTC | Domains: 17 | Source version: 20261013141915
+# Updated: 2026-10-18 20:11 UTC | Domains: 15 | Source version: 20261019023238
 5471782.fls.doubleclick.net
 acs-m.daraz.com.bd
 acs-m.daraz.pk
-ad.ourgame.com
 advert.kf5.com
 app-advertise.zhihuishu.com
 captcha.su.baidu.com
-click.simba.taobao.com
 log.mmstat.com
 pagead.l.doubleclick.net
 pics.porn300.com
