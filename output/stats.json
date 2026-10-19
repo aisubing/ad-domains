@@ -1,22 +1,23 @@
 {
   "source_url": "https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdnslite.txt",
-  "source_version": "20261019023238",
-  "source_last_modified": "2026/10/19 02:32:38",
-  "generated_at": "2026-10-18T20:11:42Z",
+  "source_version": "20261020045645",
+  "source_last_modified": "2026/10/20 04:56:45",
+  "generated_at": "2026-10-19T22:03:56Z",
   "counts": {
-    "source_lines": 8124,
+    "source_lines": 7935,
     "skipped_lines": 0,
-    "blocked": 8099,
-    "whitelist": 15,
-    "removed_exact": 3,
+    "blocked": 7909,
+    "whitelist": 16,
+    "removed_exact": 4,
     "removed_subdomain": 0,
     "removed_parent": 2,
-    "final_domains": 8094,
-    "lite_domains": 7929,
-    "removed_related": 170
+    "final_domains": 7903,
+    "lite_domains": 7690,
+    "removed_related": 219
   },
   "removed": {
     "exact": [
+      "ad.ourgame.com",
       "sax.sina.com.cn",
       "sobot.com",
       "wan.douyu.com"
@@ -38,9 +39,10 @@
     "kf5.com",
     "lenovo.com",
     "mmstat.com",
-    "porn300.com",
+    "ourgame.com",
     "sina.com.cn",
     "sobot.com",
+    "taobao.com",
     "zhihuishu.com"
   ]
 }
