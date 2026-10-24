@@ -1,18 +1,18 @@
 {
   "source_url": "https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdnslite.txt",
-  "source_version": "20261024035253",
-  "source_last_modified": "2026/10/24 03:52:53",
-  "generated_at": "2026-10-23T21:04:41Z",
+  "source_version": "20261025024121",
+  "source_last_modified": "2026/10/25 02:41:21",
+  "generated_at": "2026-10-24T20:21:14Z",
   "counts": {
-    "source_lines": 8481,
+    "source_lines": 8490,
     "skipped_lines": 0,
-    "blocked": 8455,
+    "blocked": 8464,
     "whitelist": 16,
     "removed_exact": 4,
     "removed_subdomain": 0,
     "removed_parent": 2,
-    "final_domains": 8449,
-    "lite_domains": 8209,
+    "final_domains": 8458,
+    "lite_domains": 8218,
     "removed_related": 246
   },
   "removed": {
