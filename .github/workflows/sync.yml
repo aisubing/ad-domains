@@ -4,7 +4,7 @@ on:
   schedule:
     # GitHub Actions 定时任务使用 UTC：每天 18:00 UTC = 北京时间次日凌晨 02:00。
     # 源列表每 8 小时更新一次，如需更高同步频率可自行修改。
-    - cron: "0 18 * * *"
+    - cron: "0 18 * * 1"
   workflow_dispatch: {}
   push:
     paths:
