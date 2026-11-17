@@ -34,7 +34,7 @@ https://raw.githubusercontent.com/aisubing/ad-domains/main/output/ad-whitelist.t
 
 ## 它做了什么
 
-1. 下载源列表 [adblockdnslite.txt](https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdnslite.txt)（Lite 版仅针对国内域名拦截，每 8 小时更新）；
+1. 下载源列表 [adblockdnslite.txt](https://github.com/217heidai/adblockfilters/releases/download/rule/adblockdnslite.txt)（Lite 版仅针对国内域名拦截，每 8 小时更新）；
 2. 解析 `||example.com^`（屏蔽）与 `@@||example.com^`（白名单）两类规则，只保留可解析为纯域名的行；
 3. `ad-domains.txt` 从屏蔽列表中剔除（如果存在）：
    - 与白名单条目**完全相同**的域名（如 `sax.sina.com.cn`）；
