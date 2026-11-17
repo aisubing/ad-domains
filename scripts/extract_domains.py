@@ -2,7 +2,7 @@
 """ad-domain —— 从 217heidai/adblockfilters 的 adblockdnslite.txt 提取纯域名屏蔽列表。
 
 处理逻辑：
-  1. 下载源列表（https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdnslite.txt）；
+  1. 下载源列表（https://github.com/217heidai/adblockfilters/releases/download/rule/adblockdnslite.txt）；
   2. 解析 `||example.com^` 屏蔽规则与 `@@||example.com^` 白名单规则，校验域名合法性；
   3. 生成域名列表文件（首行为 “# Updated: ... | Domains: N | ...” 元信息，
      含更新时间、域名数量与源版本号，其余每行一个纯域名）：
@@ -36,7 +36,7 @@ import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
-SOURCE_URL = "https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdnslite.txt"
+SOURCE_URL = "https://github.com/217heidai/adblockfilters/releases/download/rule/adblockdnslite.txt"
 PSL_URL = "https://publicsuffix.org/list/public_suffix_list.dat"
 ROOT = Path(__file__).resolve().parent.parent
 OUTPUT_DIR = ROOT / "output"
