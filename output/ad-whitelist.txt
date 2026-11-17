@@ -1,6 +1,5 @@
-# Updated: 2026-10-19 22:03 UTC | Domains: 16 | Source version: 20261020045645
+# Updated: 2026-11-17 12:28 UTC | Domains: 15 | Source version: 20261117152405
 5471782.fls.doubleclick.net
-acs-m.daraz.com.bd
 acs-m.daraz.pk
 ad.ourgame.com
 advert.kf5.com
