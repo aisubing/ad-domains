@@ -1,4 +1,4 @@
-# Updated: 2026-11-18 00:32 UTC | Domains: 6000 | Source version: 20261118013009
+# Updated: 2026-11-18 23:53 UTC | Domains: 6011 | Source version: 20261119010405
 0001-metrics1-drcn-dt-dbankcloud-cn.geac.dbankedge.cn
 0002-metrics1-drcn-dt-dbankcloud-cn.geac.dbankedge.cn
 027dir.com
@@ -313,7 +313,6 @@ ad-scope.com.cn
 ad-sdk-config.youdao.com
 ad-sdk.altamob.xiaoying.co
 ad-sdk.huxiu.com
-ad-server.xhgamesdk.com
 ad-static.nxtsun.com
 ad-static.nxtsun.com.eo.dnse3.com
 ad-tj-gorgon.ntes53.netease.com
@@ -375,6 +374,7 @@ ad.maoyan.com
 ad.mcloud.139.com
 ad.mh.163.com
 ad.mi.com
+ad.mingruidata.com
 ad.missionhillschina.com
 ad.mobile.youku.com
 ad.moonton.cn
@@ -407,6 +407,7 @@ ad.us.sinaimg.cn
 ad.v3mh.com
 ad.v6.kuaishou.com
 ad.weibo.com
+ad.weplayer.cc
 ad.winrar.com.cn
 ad.xhey.top
 ad.ximalaya.com
@@ -691,7 +692,6 @@ adsmartget.datads.cn
 adsmind.apdcdn.tc.qq.com
 adsmind.gdtimg.com.tcdn.qq.com
 adsmind.ugdtimg.com.tcdn.qq.com
-adsmis.duxiaoman.com
 adsmogo.com
 adsoss.uqualities.com
 adsp.xunlei.com
@@ -735,7 +735,6 @@ advertise.baicizhan.com
 advertise.cloudlinks.cn
 advertise.ldplayer.net
 advertpay-vip-ssl.xunlei.com
-advertpay.vip.xunlei.com
 adview.cn
 adview.com
 advlion.com
@@ -872,7 +871,6 @@ analytics.300624.com
 analytics.95516.com
 analytics.95516.com.wscdns.com
 analytics.afirstsoft.cn
-analytics.amarea.cn
 analytics.amarea.cn.eo.dnse2.com
 analytics.api.myqnapcloud.cn
 analytics.apps.seabroadnet.com
@@ -909,7 +907,6 @@ analytics.oceanengine.com
 analytics.oceanengine.com.bytedns1.com
 analytics.oceanengine.com.queniuiq.com
 analytics.oceanengine.com.w.cdngslb.com
-analytics.okorder.com
 analytics.ooofoo.com
 analytics.partnerboost.com
 analytics.selfboot.cn
@@ -1120,7 +1117,6 @@ app.moji001.com
 app.partnerboost.com
 app.storage.yunvm.com
 app.update.lenovo.com
-appadapi.ihuman.com
 appc.baidu.com
 appcfg.v.qq.com
 appconf.heytapdownload.com
@@ -1267,6 +1263,7 @@ baihuwang.com
 baixing.com
 bakbitionb.com
 banana.le.com
+banmamedia.com
 baolongwes.oss-ap-southeast-1.aliyuncs.com
 bar.baidu.com
 bartender.cc
@@ -1420,6 +1417,7 @@ bugly.chujingapp.com
 bugly.djigate.com
 bugly.qcloud.com
 bugly.qq.com
+bugly.weplayer.cc
 bun1.dayi.org.cn
 burnercombustion.org.cn
 busuanzi.ibruce.info
@@ -1724,6 +1722,7 @@ cre.mix.sina.com.cn
 crf999.cn
 crgshop.shop
 crobotb.com
+crosspromotion.weplayer.cc
 crs.baidu.com
 crustbikesco.shop
 cs-feige.iqiyi.com
@@ -2089,6 +2088,7 @@ eo.dongdm.cn
 eoyqzzk.cn
 epaes.com.cn
 epoch-id.cdo.heytapmobi.com
+eqlidke.cn
 eraaoec.cn
 err-up.vivo.com.cn
 err.ifengcloud.ifeng.com
@@ -2281,6 +2281,7 @@ freedownloadhq.com
 freeotp.cn.pages.dnsoe4.com
 frontier100-toutiao-lf.fqnovel.com
 frp8r3le9c.com
+fs-uc-nearme-com-cn.oss-cn-hangzhou.aliyuncs.com
 fsr.lenovomm.com
 ftwo-feedback.autohome.com.cn
 ftwo-receiver.autohome.com.cn
@@ -2720,6 +2721,7 @@ id-miuilog.sms.intl.xiaomi.com
 id-third-appstore.vivoglobal.com
 id.tv.global.mi.com
 id6.me
+idd1.com
 identify.tankeai.com
 idm-su.baidu.com
 idm.api.autohome.com.cn
@@ -3276,6 +3278,7 @@ log.wtlogin.qq.com
 log.xiaoyi.com
 log.yayaad.com
 log.ycapp.yiche.com
+log.yex.youdao.com
 log.yinshantech.cn
 log.ys7.com
 log.zcool.com.cn
@@ -3386,6 +3389,7 @@ looyu.com
 lop.lamimi.cn
 love.furenkeji.com
 lovemoglichinderlade.shop
+lpbhnv.telemundolasvegas.com
 lpmzt.cn
 lrswl.com
 lstat.youku.com
@@ -3884,6 +3888,7 @@ open.kwaizt.com
 open.snssdk.com
 open.xueqiu.com
 openapi-news.meizu.com
+openapi.guanjia.qq.com
 openapi.vip.ptqy.gitv.tv
 openinstall.io
 openjmacs.m.taobao.com
@@ -4342,6 +4347,7 @@ resolver.mi.xiaomi.com
 resolver.msg.global.xiaomi.net
 resource-cmp.hismarttv.com
 resource.baomihua.com
+rest-argus-ad.agoralab.co
 resu8.hjfile.cn
 retcode-sg-lazada.arms.aliyuncs.com
 retcode.taobao.com
@@ -4576,7 +4582,6 @@ sentry-v2.coros.com
 sentry-web.mexdin.mx.3anulwrbcydc.e.aliyunwaf1.com
 sentry.amflowbikes.com
 sentry.amflowbikes.com.w.cdngslb.com
-sentry.baijia.com
 sentry.banjixiaoguanjia.com
 sentry.chametw.com.w.cdngslb.com
 sentry.coros.com
@@ -4585,10 +4590,11 @@ sentry.d.mi.com
 sentry.d.xiaomi.net
 sentry.deyecloud.com
 sentry.dhgate.com
-sentry.duozhuayu.net
+sentry.dreambig.work
 sentry.eks.hoyoverse.com
 sentry.epay.ntes53.netease.com
 sentry.globalsources.com
+sentry.grtcloud.net
 sentry.gryphline.com
 sentry.heytea-co.com.e.aliyunwaf5.com
 sentry.joybest.com.cn
@@ -4653,6 +4659,7 @@ shopfreestylephoto.com
 shopmaxusersatzteile.shop
 shoprseasafetyoutlet.shop
 shopskydance.shop
+shoujiawang.cn
 show-msgch.qq.com
 show.ssports.com
 shrek.6.cn
@@ -4767,6 +4774,7 @@ sp1.baidu.com
 sp2.baidu.com
 sp3.baidu.com
 spider-tracker.xiaohongshu.com
+spinfo.wps.cn
 splash-online-decision.xiaohongshu.com
 splashimgbssdl.yun.kugou.com
 splashqqlive.gtimg.com
@@ -5308,6 +5316,7 @@ txscn.cn
 ty.cn
 tyh.taobao.com
 tz.sec.xiaomi.com
+tzcfyre.cn
 u.dxsvr.com
 u.uc123.com
 u.zhugeapi.net
@@ -5392,6 +5401,7 @@ ums-rum-cn.heytapimage.com
 ums-rum-global.heytapimage.com
 ums-telemetry-cn.heytapmobi.com
 ums-telemetry-eu-par.heytapmobi.com
+ums-telemetry-india-hea-cadab.in-s01.cngw.heytapmobi.com
 ums-telemetry-india.heytapmobi.com
 ums-telemetry-sgp.heytapmobi.com
 ums-telemetry.oppoer.me
@@ -5460,6 +5470,7 @@ utility.baidu.com
 utiq.manager-magazin.de
 utp.ucweb.com
 utrack.hexun.com
+utywsi.cn
 uu.qq.com
 uu1.3gu.com
 uulucky.com
