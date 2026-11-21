@@ -1,4 +1,4 @@
-# Updated: 2026-11-20 23:40 UTC | Domains: 6021 | Source version: 20261121005118-679b89c
+# Updated: 2026-11-21 22:46 UTC | Domains: 6023 | Source version: 20261122053606-8e60d7a
 0001-metrics1-drcn-dt-dbankcloud-cn.geac.dbankedge.cn
 0002-metrics1-drcn-dt-dbankcloud-cn.geac.dbankedge.cn
 027dir.com
@@ -180,6 +180,7 @@
 866.com
 88362zubo95838.com
 888.tv.sohu.com
+888wg.cn
 88la.la
 8k69vb6421.com
 8le8le.com
@@ -413,6 +414,7 @@ ad.us.sinaimg.cn
 ad.v3mh.com
 ad.v6.kuaishou.com
 ad.weibo.com
+ad.weplayer.cc
 ad.winrar.com.cn
 ad.xhey.top
 ad.ximalaya.com
@@ -795,6 +797,7 @@ aegt.com.cn
 aem.dentsuchina.cn
 aemetrics.aliexpress.ru
 af1tsjdta.com
+afce.cn
 afd.baidu.com
 afdconf.baidu.com
 affiliate.klook.com
@@ -1039,6 +1042,7 @@ api.e-toys.cn
 api.eu.hismarttv.com
 api.firwinds.site
 api.g.micloud.xiaomi.net
+api.game.intl.miui.com
 api.hdtv.letv.com
 api.hybrid.xiaomi.com
 api.hzsanjiaomao.com
@@ -1344,7 +1348,6 @@ beacon.tencent.com
 beacon.tencentwm.com
 beacon.ztgame.com.cdn.dnsv1.com
 beaconcdn.qq.com
-becksondergaardstore.shop
 beha.ksmobile.com
 beizi.biz
 bengbeng.com
@@ -1388,7 +1391,6 @@ bkt.clouddn.com
 bl.emotionalworld.cn
 blackhole.m.jd.com
 blog.ivup.cn
-blooziewear.shop
 bm.h576.com
 bmjs.xzw.com
 bncqucpia.com
@@ -1435,7 +1437,6 @@ bun1.dayi.org.cn
 burnercombustion.org.cn
 busuanzi.ibruce.info
 buyalwansolar.shop
-buynaturium.shop
 bvmlt.top
 bws.airwallex.com
 bxsnews.com
@@ -1472,7 +1473,6 @@ caomeixz7.xyz
 cards-css.iqiyi.com
 care.help.360.cn
 carstat.bitauto.com
-cart.net.cn
 cartx.cloud
 casee.cn
 catfront.dianping.com
@@ -1593,6 +1593,7 @@ cm.passport.iqiyi.com
 cmbkgmx.cn
 cmgadx.com
 cmm.xmfish.com
+cmna.cn
 cmpxaup.cn
 cms.grandcloud.cn
 cms.tanx.com
@@ -1727,6 +1728,7 @@ crash2.zhihu.com
 crasheye.cn
 crashlytics.163.com
 crashlyticsreports-pa.googleapis.com
+crashsight-logs-1258344700.cos.ap-shanghai.myqcloud.com
 crashsight-logs-1319323203.cos.accelerate.myqcloud.com
 crashsight-us.iegcom.com
 crashsight.qq.com
@@ -1734,8 +1736,8 @@ crashsight.wetest.net
 cre.dp.sina.cn
 cre.mix.sina.com.cn
 crf999.cn
-crgshop.shop
 crobotb.com
+crosspromotion.weplayer.cc
 crs.baidu.com
 crustbikesco.shop
 cs-feige.iqiyi.com
@@ -2041,6 +2043,7 @@ e.mi.com
 e.qq.com
 e.tapdb.ap-sg.tapapis.com
 e810.cn
+eagb.cn
 eap.big5.enorth.com.cn
 eap.enorth.com.cn
 easou.com
@@ -2173,6 +2176,7 @@ events-drru.op.hicloud.com
 events.baicizhan.com
 eventv1.leidong.rayenergytech.com
 evoqueebikeshop.shop
+ewbs.cn
 ex-adreq-asia.vivoglobal.com
 ex-adreq-in.vivoglobal.com
 ex-romsp-unifyconfig.vivoglobal.com
@@ -2255,7 +2259,6 @@ flexish.shop
 flsfzr.cn
 flstudiochina.com
 flux.faloo.com
-flyye.cn
 fm.duokanbox.com
 fodder.qq.com
 foisonad.com
@@ -2391,7 +2394,6 @@ ggx03.miguvideo.com
 ggxwb.miguvideo.com
 ghghgf.xuexiwa.com
 ghsnhjk.cn
-gi.cn
 gid.tapapis.cn
 gimg.baidu.com
 giocdn.com
@@ -2501,6 +2503,7 @@ gwrpceo.cn
 gxdowell.cn
 gxgbvmg.cn
 gxhzv.cn
+gxtvu.com.cn
 gyqpyr.utsource.net
 gz-data.com
 gz.apigw.tencentcs.com
@@ -3035,6 +3038,7 @@ kivo.fun
 kjewt01aa.com
 kkpgv2.xunlei.com
 kl.67it.com
+klvt.cn
 kmpl.rnqxp.cn
 kmpxq.cn
 kmr.service.kugou.com
@@ -3287,7 +3291,6 @@ log.wtlogin.qq.com
 log.xiaoyi.com
 log.yayaad.com
 log.ycapp.yiche.com
-log.yex.youdao.com
 log.yinshantech.cn
 log.ys7.com
 log.zcool.com.cn
@@ -3831,6 +3834,7 @@ o5y2zd1lq8.com
 o8u3n4q7fe.com
 oaclrst.cn
 oadz.com
+obgk.cn
 obs.com.cn
 obscj.com
 obsproject.com.cn
@@ -3859,7 +3863,6 @@ ockmarket.shop
 offer.alibaba.com
 offerstrack.net
 officialdtspharmacy.shop
-officialriskmadeinwarsaw.shop
 offie-wps.com.cn
 ofkqiy.knowfashionstyle.com
 oimagea2.ydstatic.com
@@ -4015,6 +4018,7 @@ pcdn.xmcdn.com
 pcfg.wps.cn
 pcm-img.zhls.qq.com
 pcmactivity.chinacloudsites.cn
+pcmx.autohome.com.cn
 pco-sm-log.tantanapp.com
 pcookie.aliexpress.com
 pcookie.taobao.com
@@ -4309,6 +4313,7 @@ remoteconfig-dre.platform.hihonorcloud.com
 remoteconfig-uat-drcn.platform.hihonorcloud.com
 renwoxingcap.cn
 renzhen8.cn
+repo.huaweicloud.com
 report-america.agora.io
 report-america2.agora.io
 report-asia.agora.io
@@ -4352,7 +4357,6 @@ resolver.mi.xiaomi.com
 resolver.msg.global.xiaomi.net
 resource-cmp.hismarttv.com
 resource.baomihua.com
-rest-argus-ad.agoralab.co
 resu8.hjfile.cn
 retcode-sg-lazada.arms.aliyuncs.com
 retcode.taobao.com
@@ -4595,7 +4599,6 @@ sentry.d.mi.com
 sentry.d.xiaomi.net
 sentry.deyecloud.com
 sentry.dhgate.com
-sentry.dreambig.work
 sentry.eks.hoyoverse.com
 sentry.epay.ntes53.netease.com
 sentry.globalsources.com
@@ -4653,6 +4656,7 @@ sgtm.dhgate.com
 sgtm.dhgate.com.cdngtm.com
 sh.apigw.tencentcs.com
 shadu.baidu.com
+shanhulan.cn
 shanhutech.cn
 shaquevip.oss-cn-zhangjiakou.aliyuncs.com
 share.baidu.com
@@ -4789,7 +4793,6 @@ splashqqlive.gtimg.com
 spst2.com
 sqdd.myapp.com
 srbzw.cn
-src.leju.com
 srd.simba.taobao.com
 srqxnvjdd.com
 srtb.msn.cn
@@ -4868,7 +4871,6 @@ stat.xdplt.com
 stat.xgo.com.cn
 stat.youpin.mi.com
 stat.zol.com.cn
-stat1-mlycdn.bmyy520.com.cdn.ns1011.com
 stat2.pixpin.cn
 static-doubleclick-net.l.google.com
 static-s.iqiyi.com
@@ -5081,7 +5083,6 @@ tgw-sasdk.3g.qq.com
 th.pinduoduo.com
 th.tv.global.mi.com
 th7.cn
-theraloawam.net
 theta.sogoucdn.com
 thetestpage.39.net
 thewituka.shop
@@ -5292,6 +5293,7 @@ trustutn.org
 ts166.net
 tsearch.snssdk.com
 ttdbh.com
+ttimoo.com
 tudou.com
 tuhzjrr.cn
 tui.weibo.com
@@ -5305,6 +5307,7 @@ turbo2sdk-push.oupeng.com
 tuxi.com.cn
 tv.weixin.pandora.xiaomi.com
 tvabqt.cn
+tvce.cn
 tvdpebx.cn
 tvepg.pandora.xiaomi.com
 tvuser-ch.cedock.com
@@ -6011,7 +6014,6 @@ zukddms.cn
 zuowen.hydcd.com
 zwlpdo.cn
 zx.docin.com
-zxzs365.cn
 zygkzytb.cn
 zykwnj.cn
 zyxyfy.com
