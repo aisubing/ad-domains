@@ -1,19 +1,19 @@
 {
   "source_url": "https://github.com/217heidai/adblockfilters/releases/download/rule/adblockdnslite.txt",
-  "source_version": "20261123000517-a778a63",
-  "source_last_modified": "2026/11/23 00:05:17",
-  "generated_at": "2026-11-22T23:14:33Z",
+  "source_version": "20261124035927-7554399",
+  "source_last_modified": "2026/11/24 03:59:27",
+  "generated_at": "2026-11-24T03:49:29Z",
   "counts": {
-    "source_lines": 6041,
+    "source_lines": 5766,
     "skipped_lines": 0,
-    "blocked": 6016,
-    "whitelist": 15,
+    "blocked": 5742,
+    "whitelist": 14,
     "removed_exact": 4,
     "removed_subdomain": 0,
     "removed_parent": 2,
-    "final_domains": 6010,
-    "lite_domains": 5769,
-    "removed_related": 247
+    "final_domains": 5736,
+    "lite_domains": 5508,
+    "removed_related": 234
   },
   "removed": {
     "exact": [
@@ -35,7 +35,6 @@
     "douyu.com",
     "googleadservices.com",
     "ifengimg.com",
-    "kf5.com",
     "lenovo.com",
     "mmstat.com",
     "ourgame.com",
