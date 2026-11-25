@@ -2,8 +2,10 @@
 """ad-domain —— 从 217heidai/adblockfilters 的 adblockdnslite.txt 提取纯域名屏蔽列表。
 
 处理逻辑：
-  1. 下载源列表（https://github.com/217heidai/adblockfilters/releases/download/rule/adblockdnslite.txt）；
+  1. 下载源列表（上游订阅表中的“规则1'”，Lite 版：
+     https://raw.githubusercontent.com/217heidai/adblockfilters/dist/adblockdnslite.txt）；
   2. 解析 `||example.com^` 屏蔽规则与 `@@||example.com^` 白名单规则，校验域名合法性；
+     scripts/whitelist.txt（若存在）为本地补充白名单，与源列表白名单合并后参与全部过滤；
   3. 生成域名列表文件（首行为 “# Updated: ... | Domains: N | ...” 元信息，
      含更新时间、域名数量与源版本号，其余每行一个纯域名）：
      - ad-domains.txt：从屏蔽列表中剔除（“如果存在”）：
@@ -14,9 +16,9 @@
      - ad-domainslite.txt：更保守的 Lite 版——出现在白名单中的域名，其同主域的
        屏蔽条目全部移除。主域按 Public Suffix List 计算，如白名单放行
        captcha.su.baidu.com（主域 baidu.com），则屏蔽列表中所有 *.baidu.com 一并移除；
-     - ad-whitelist.txt：源列表中的白名单域名；
-  4. 去重、排序后输出。域名内容与上次一致时不重写任何文件（含统计），
-     首行时间标识保持上次更新时间，避免无效提交。
+     - ad-whitelist.txt：源列表白名单与本地补充白名单的并集；
+  4. 去重、排序后输出。域名内容与上次一致时不重写列表文件（统计仅在源地址变化
+     或统计缺失时更新），首行时间标识保持上次更新时间，避免无效提交。
 
 防护措施：
   - 任一结果低于 MIN_DOMAINS 或较上次跌幅超过 DROP_RATIO 时拒绝写出，防止上游异常清空列表。
@@ -36,10 +38,12 @@ import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
-SOURCE_URL = "https://github.com/217heidai/adblockfilters/releases/download/rule/adblockdnslite.txt"
+# 上游订阅表中的“规则1'”（Lite 版），规则文件由 dist 分支分发
+SOURCE_URL = "https://raw.githubusercontent.com/217heidai/adblockfilters/dist/adblockdnslite.txt"
 PSL_URL = "https://publicsuffix.org/list/public_suffix_list.dat"
 ROOT = Path(__file__).resolve().parent.parent
 OUTPUT_DIR = ROOT / "output"
+LOCAL_WHITELIST_PATH = Path(__file__).resolve().parent / "whitelist.txt"
 
 DOWNLOAD_TIMEOUT = 30
 DOWNLOAD_RETRIES = 3
@@ -94,6 +98,31 @@ def is_valid_domain(domain: str) -> bool:
         return False
     labels = domain.split(".")
     return all(len(label) <= 63 and LABEL_RE.match(label) for label in labels)
+
+
+def load_local_whitelist(path: Path) -> set[str]:
+    """读取本地补充白名单：每行一个域名，支持 # / ! 注释与 ||domain^ 形式的行。"""
+    if not path.exists():
+        log(f"未找到本地补充白名单 {path}，仅使用源列表白名单")
+        return set()
+    domains: set[str] = set()
+    invalid: list[str] = []
+    for lineno, raw in enumerate(
+        path.read_text(encoding="utf-8-sig", errors="replace").splitlines(), 1
+    ):
+        line = raw.split("#", 1)[0].strip()
+        if not line or line.startswith("!"):
+            continue
+        m = RULE_RE.match(line)
+        domain = (m.group(2) if m else line).lower().rstrip(".")
+        if not is_valid_domain(domain):
+            invalid.append(f"{path.name}:{lineno} “{raw.strip()}”")
+            continue
+        domains.add(domain)
+    if invalid:
+        raise SystemExit("本地补充白名单存在无法解析的条目：" + "；".join(invalid))
+    log(f"读取本地补充白名单 {path}：{len(domains)} 个域名")
+    return domains
 
 
 def ancestors(domain: str) -> set[str]:
@@ -210,6 +239,17 @@ def main() -> None:
 
     log(f"解析完成：屏蔽 {len(blocked)}，白名单 {len(whitelisted)}，跳过 {skipped} 行")
 
+    # 本地补充白名单与源列表白名单合并，共同参与后续剔除
+    source_whitelist_count = len(whitelisted)
+    local_whitelist = load_local_whitelist(LOCAL_WHITELIST_PATH)
+    local_added = local_whitelist - whitelisted
+    whitelisted |= local_whitelist
+    if local_whitelist:
+        log(
+            f"合并白名单：源列表 {source_whitelist_count}，本地补充 {len(local_whitelist)}"
+            f"（新增 {len(local_added)}），合计 {len(whitelisted)}"
+        )
+
     if len(blocked) < MIN_DOMAINS:
         raise SystemExit(f"解析到 {len(blocked)} 个屏蔽域名，低于 {MIN_DOMAINS}，疑似源异常，已中止。")
 
@@ -229,15 +269,23 @@ def main() -> None:
     base_set = set(whitelist_bases)
     lite = sorted(d for d in blocked if base_domain(d, *psl) not in base_set)
 
+    if len(final) < MIN_DOMAINS:
+        raise SystemExit(f"标准版仅 {len(final)} 个域名，低于 {MIN_DOMAINS}，疑似异常，已中止。")
+    if len(lite) < MIN_DOMAINS:
+        raise SystemExit(f"Lite 版仅 {len(lite)} 个域名，低于 {MIN_DOMAINS}，疑似异常，已中止。")
+
     # 与上次结果对比，防止上游异常导致清空列表
     stats_path = OUTPUT_DIR / "stats.json"
+    prev_stats: dict = {}
     prev_final = prev_lite = 0
     if stats_path.exists():
         try:
-            prev_counts = json.loads(stats_path.read_text(encoding="utf-8"))["counts"]
+            prev_stats = json.loads(stats_path.read_text(encoding="utf-8"))
+            prev_counts = prev_stats["counts"]
             prev_final = int(prev_counts["final_domains"])
             prev_lite = int(prev_counts.get("lite_domains", 0))
         except Exception:  # noqa: BLE001
+            prev_stats = {}
             prev_final = prev_lite = 0
     if prev_final and len(final) < prev_final * DROP_RATIO:
         raise SystemExit(f"域名数 {len(final)} 较上次 {prev_final} 跌幅超过 {DROP_RATIO:.0%}，疑似源异常，已中止。")
@@ -269,6 +317,9 @@ def main() -> None:
             "skipped_lines": skipped,
             "blocked": len(blocked),
             "whitelist": len(whitelisted),
+            "whitelist_from_source": source_whitelist_count,
+            "whitelist_from_local": len(local_whitelist),
+            "whitelist_local_added": len(local_added),
             "removed_exact": len(removed_exact),
             "removed_subdomain": len(removed_sub),
             "removed_parent": len(removed_parent),
@@ -282,9 +333,12 @@ def main() -> None:
             "parent_of_whitelist": sorted(removed_parent),
         },
         "whitelist_base_domains": whitelist_bases,
+        "local_whitelist": sorted(local_whitelist),
     }
-    if changed:
+    if changed or not prev_stats or prev_stats.get("source_url") != SOURCE_URL:
         write_lines(stats_path, [json.dumps(stats, ensure_ascii=False, indent=2)])
+        if not changed:
+            log("域名内容未变，仅更新统计元信息（源地址变化或统计缺失）")
     else:
         log("域名内容与上次一致，跳过重写与统计更新")
 

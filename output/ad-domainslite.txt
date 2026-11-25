@@ -1,4 +1,4 @@
-# Updated: 2026-11-25 01:54 UTC | Domains: 5633 | Source version: 20261125085348-19b17e5
+# Updated: 2026-11-25 03:06 UTC | Domains: 5595 | Source version: 20261125104920-4ef1ef7
 0001-metrics1-drcn-dt-dbankcloud-cn.geac.dbankedge.cn
 0002-metrics1-drcn-dt-dbankcloud-cn.geac.dbankedge.cn
 027dir.com
@@ -48,7 +48,6 @@
 1500020991.vodplayer.wxamedia.com
 1500022744.vodplayer.wxamedia.com
 1500026601.vodplayer.wxamedia.com
-163ns.com
 165tchuang.com
 168.it168.com
 16aq.cn
@@ -265,7 +264,6 @@ abtest.alibaba.com
 abtest.todesk.com
 abtest3-misc-hl.zijieapi.com
 abtest3-misc-lf.zijieapi.com
-ac.dun.163yun.com
 ac.o2.qq.com
 ac1.pingpingw.com
 acc.3gbizhi.com
@@ -316,7 +314,6 @@ ad.107.163.52.12.cn
 ad.107.163.53.12.cn
 ad.12306.cn
 ad.12306.cn.wscdns.com
-ad.163.com
 ad.23.107.112.30.cn
 ad.23.88.207.28.cn
 ad.2ocx.60.37.cn
@@ -369,7 +366,6 @@ ad.life.360.cn
 ad.lofter.com
 ad.maoyan.com
 ad.mcloud.139.com
-ad.mh.163.com
 ad.mi.com
 ad.mingruidata.com
 ad.missionhillschina.com
@@ -458,12 +454,10 @@ adfilter.imtt.qq.com
 adfunlink.com
 adfuture.cn
 adgame.waimai.meituan.com
-adgeo.163.com
 adhdsb.cn
 adim.pinduoduo.com
 adimage.bwton.com
 adimage.bwton.com.w.kunluncan.com
-adimg.163.com
 adimg.liba.com
 adimg.mobile.sina.cn
 adinall.com
@@ -842,7 +836,6 @@ analytics-log.finder.co.kr
 analytics-log.qpyou.cn
 analytics-union.xunlei.com
 analytics.126.com
-analytics.163.com
 analytics.300624.com
 analytics.95516.com
 analytics.95516.com.wscdns.com
@@ -1011,7 +1004,6 @@ api.hybrid.xiaomi.com
 api.hzsanjiaomao.com
 api.immomo.com
 api.installer.xiaomi.com
-api.iplay.163.com
 api.itaoxiaoshuo.com
 api.jietuhb.com
 api.jr.mi.com
@@ -1480,7 +1472,6 @@ chanet.com.cn
 changyan.sohu.com
 changyi21.cn
 channel-analysis-js.gmw.cn
-channel.m.163.com
 chaoku.oss-cn-chengdu.aliyuncs.com
 chat.quickcep.com
 chat1.jd.com
@@ -1520,11 +1511,7 @@ clickm.fang.com
 clickn.fang.com
 client-api.ele.me
 client-monitor.tantanapp.com
-clientlog.music.163.com
 clientlog.wanmei.com
-clientlog3.music.163.com
-clientlogdep.music.163.com
-clientlogsf.music.163.com
 clkservice.youdao.com
 clog.miguvideo.com
 clog.tanshudata.com
@@ -1629,7 +1616,6 @@ corp.meitu.com
 count.7m.com.cn
 count.candou.com
 count.enet.com.cn
-count.mail.163.com
 count.pcauto.com.cn
 count.vrs.sohu.com
 count.west263.com
@@ -1638,7 +1624,6 @@ counter.people.cn
 counter.yesky.com
 countly.dev.chnapss.com
 countly.growatt.com
-countly.mail.163.com
 countpvn.light.fang.com
 countubn.light.soufun.com
 cp.7y7.com
@@ -1653,14 +1638,12 @@ cpro.zol.com.cn
 cps.360buy.com
 cpux.gmud.top
 cr.tv.global.mi.com
-crash.163.com
 crash.rnote.com
 crash.rnote.com.eo.dnse0.com
 crash.safe.360.cn
 crash.xiaohongshu.com
 crash2.zhihu.com
 crasheye.cn
-crashlytics.163.com
 crashlyticsreports-pa.googleapis.com
 crashsight-logs-1258344700.cos.ap-shanghai.myqcloud.com
 crashsight-logs-1319323203.cos.accelerate.myqcloud.com
@@ -2101,7 +2084,6 @@ fashion.tradeshow.globalsources.com
 fastapi.net
 fc-feed.cdn.bcebos.com
 fc.3dmgame.com
-fcount-api.webapp.163.com
 fdfda.zhuzhai.com
 fds.api.moji.com
 fe-go.letv.com
@@ -2168,7 +2150,6 @@ fp-it.fengkongcloud.com
 fp-na-it-acc.fengkongcloud.com
 fp-sa-it-acc.fengkongcloud.com
 fp-sa-it.fengkongcloud.com
-fp-upload.dun.163.com
 fp.nanrenwo.net
 fpb.sohu.com
 fpb1.apple886.com
@@ -2195,7 +2176,6 @@ fx455rrt4b.com
 fxltsbl.com
 fy14.cn
 fzpress.com.cn
-g.163.com
 g.analytics.versa-ai.com
 g.gegeyingshi.com
 g.hsw.cn
@@ -2228,7 +2208,6 @@ gatecollect.kugou.com
 gateway-bugly.ke.com
 gatherer.m.qq.com
 gator.volces.com
-gb.corp.163.com
 gb.tv.global.mi.com
 gcbflvx.cn
 gdfp.gifshow.com
@@ -2492,7 +2471,6 @@ httpdns.huaweicloud.com
 httpdns.kg.qq.com
 httpdns.kwd.inkuai.com
 httpdns.meituan.com
-httpdns.music.163.com
 httpdns.n.netease.com
 httpdns.n.shifen.com
 httpdns.ocloud.heytapmobi.com
@@ -2652,12 +2630,9 @@ ipinyou.com
 ipinyou.com.cn
 iplogger.cn
 ipv4.kkmh.com
-ipv4.music.163.com
 ipv6.kg.qq.com
 iq.tv.global.mi.com
 iqiyim.adtrack.enlightent.cn
-ir-sdk.dun.163.com
-ir-sdk.dun.163yun.com
 ir-sdk.guardease.com
 ir.mail.126.com
 ir.mail.yeah.net
@@ -2940,7 +2915,6 @@ location.tiktokv.com
 location.ximalaya.com
 lockview.cn
 lodipq3zb.com
-lofter.httpdns.c.163.com
 log-api-mn.huxiu.com
 log-api.cli.im
 log-api.huxiu.com
@@ -3031,7 +3005,6 @@ log.tv360.vn
 log.ua.iegcom.com
 log.ubianet.com
 log.us.xiaoyi.com
-log.uu.163.com
 log.v2.hunantv.com
 log.vcgame.cn
 log.web.kugou.com
@@ -3450,7 +3423,6 @@ multi-az-ulog.gifshow.com
 multi-az-ulog.ksapisrv.com
 mum.alibabachengdun.com
 mum.alibabachengdun.net
-music.httpdns.c.163.com
 mvads.kugou.com
 mvamnng.cn
 mvconf.cloud.360safe.com
@@ -3506,7 +3478,6 @@ ndct-data.video.iqiyi.com
 neirong.funshion.com
 nejmqianyan.cn
 net.daraz.lk
-netapm.music.163.com
 netstat.yunnan.cn
 networkbench.com
 new.915yzt.cn
@@ -3521,7 +3492,6 @@ news.qcyz.cn
 news.qhstatic.com
 news.reedexpo.com.cn
 newspush.sinajs.cn
-nex.163.com
 nfa.jd.com
 ng2y405w3y.com
 nh3q4ucdlb.com
@@ -3611,7 +3581,6 @@ omni.australia.cn
 oneapm.com
 onelnk.com
 onezapp.com
-online-logger.webapp.163.com
 online.hnoexpo.com
 online.sh.cn
 onrt-stsdk.vivo.com.cn
@@ -3978,7 +3947,6 @@ qyxrwl.com
 r.51wnl-cq.com
 r.browser.miui.com
 r.dmp.sina.cn
-r.mail.163.com
 r.sg.sec.miui.com
 r7988-8t7jb6-u-1324992141.cos.ap-jakarta.myqcloud.com
 rabc1.iteye.com
@@ -4299,7 +4267,6 @@ sentry.kuaishou.com
 sentry.meitu-int.com
 sentry.meitu-int.com.c.vedcdnlb.com
 sentry.monitoring.ugnas.com
-sentry.music.163.com
 sentry.netease.com
 sentry.oihlecz.com.whecloud.com
 sentry.qt.qq.com
@@ -4730,7 +4697,6 @@ telemetry.pod6.prod.avatar.ext.hp.com
 telemetry.pod7.prod.avatar.ext.hp.com
 telemetry.pod8.prod.avatar.ext.hp.com
 telemetry.pod9.prod.avatar.ext.hp.com
-temp.163.com
 tencentapigw.com
 tepusi888.cn
 testin.cn
@@ -4752,7 +4718,6 @@ tianshu.gtimg.cn
 tiantiansoft.com
 tiexing.com
 time.video.ptqy.gitv.tv
-timejs.game.163.com
 timon.zijieapi.com
 tingyun.com
 tisszhb.cn
@@ -5479,15 +5444,12 @@ yahekby.cn
 yahoo.com.cn
 yangshengzu.cn
 yanjiapi.antutu.net
-yaolu.mh.163.com
-yaolu.yuedu.163.com
 yatemy.cn
 yd126.com
 ydgsvls.cn
 ydjs.zol.com.cn
 ydmob.com
 ydpushserver.youdao.com
-ye.dun.163yun.com
 yemnn.cn
 yeql3hzbd.com
 yfghrey-1433552157.cos.ap-hongkong.myqcloud.com

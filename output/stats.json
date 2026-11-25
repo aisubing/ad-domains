@@ -1,34 +1,62 @@
 {
-  "source_url": "https://github.com/217heidai/adblockfilters/releases/download/rule/adblockdnslite.txt",
-  "source_version": "20261125085348-19b17e5",
-  "source_last_modified": "2026/11/25 08:53:48",
-  "generated_at": "2026-11-25T01:54:50Z",
+  "source_url": "https://raw.githubusercontent.com/217heidai/adblockfilters/dist/adblockdnslite.txt",
+  "source_version": "20261125104920-4ef1ef7",
+  "source_last_modified": "2026/11/25 10:49:20",
+  "generated_at": "2026-11-25T03:06:38Z",
   "counts": {
     "source_lines": 5902,
     "skipped_lines": 0,
     "blocked": 5877,
-    "whitelist": 15,
-    "removed_exact": 4,
-    "removed_subdomain": 0,
+    "whitelist": 23,
+    "whitelist_from_source": 15,
+    "whitelist_from_local": 8,
+    "whitelist_local_added": 8,
+    "removed_exact": 7,
+    "removed_subdomain": 18,
     "removed_parent": 2,
-    "final_domains": 5871,
-    "lite_domains": 5633,
-    "removed_related": 244
+    "final_domains": 5850,
+    "lite_domains": 5595,
+    "removed_related": 282
   },
   "removed": {
     "exact": [
+      "163ns.com",
       "ad.ourgame.com",
+      "api.iplay.163.com",
+      "channel.m.163.com",
       "sax.sina.com.cn",
       "sobot.com",
       "wan.douyu.com"
     ],
-    "subdomain_of_whitelist": [],
+    "subdomain_of_whitelist": [
+      "ac.dun.163yun.com",
+      "clientlog.music.163.com",
+      "clientlog3.music.163.com",
+      "clientlogdep.music.163.com",
+      "clientlogsf.music.163.com",
+      "count.mail.163.com",
+      "countly.mail.163.com",
+      "fcount-api.webapp.163.com",
+      "fp-upload.dun.163.com",
+      "httpdns.music.163.com",
+      "ipv4.music.163.com",
+      "ir-sdk.dun.163.com",
+      "ir-sdk.dun.163yun.com",
+      "netapm.music.163.com",
+      "online-logger.webapp.163.com",
+      "r.mail.163.com",
+      "sentry.music.163.com",
+      "ye.dun.163yun.com"
+    ],
     "parent_of_whitelist": [
       "doubleclick.net",
       "googleadservices.com"
     ]
   },
   "whitelist_base_domains": [
+    "163.com",
+    "163ns.com",
+    "163yun.com",
     "baidu.com",
     "daraz.pk",
     "doubleclick.net",
@@ -43,5 +71,15 @@
     "sobot.com",
     "taobao.com",
     "zhihuishu.com"
+  ],
+  "local_whitelist": [
+    "163ns.com",
+    "api.iplay.163.com",
+    "channel.m.163.com",
+    "dun.163.com",
+    "dun.163yun.com",
+    "mail.163.com",
+    "music.163.com",
+    "webapp.163.com"
   ]
 }

@@ -1,6 +1,6 @@
 # ad-domains
 
-从 [217heidai/adblockfilters](https://github.com/217heidai/adblockfilters) 的 `adblockdnslite.txt` 提取的**纯域名屏蔽列表**，每天自动同步，并已剔除源列表中声明的白名单域名。
+从 [217heidai/adblockfilters](https://github.com/217heidai/adblockfilters) 的 `adblockdnslite.txt` 提取的**纯域名屏蔽列表**，每天自动同步，并已剔除源列表中声明的白名单域名及 [本地补充白名单](#本地补充白名单)中的域名。
 
 适用于 AdGuard Home、dnsmasq、SmartDNS、mosdns 等直接消费"每行一个域名"的工具。
 
@@ -26,7 +26,7 @@ https://raw.githubusercontent.com/aisubing/ad-domains/main/output/ad-domainslite
 
 ### 白名单
 
-源列表中的白名单域名，供支持例外/允许列表的工具配合屏蔽列表使用：
+源列表白名单与本仓库本地补充白名单（`scripts/whitelist.txt`）的并集，供支持例外/允许列表的工具配合屏蔽列表使用：
 
 ```
 https://raw.githubusercontent.com/aisubing/ad-domains/main/output/ad-whitelist.txt
@@ -34,8 +34,8 @@ https://raw.githubusercontent.com/aisubing/ad-domains/main/output/ad-whitelist.t
 
 ## 它做了什么
 
-1. 下载源列表 [adblockdnslite.txt](https://github.com/217heidai/adblockfilters/releases/download/rule/adblockdnslite.txt)（Lite 版仅针对国内域名拦截，每 8 小时更新）；
-2. 解析 `||example.com^`（屏蔽）与 `@@||example.com^`（白名单）两类规则，只保留可解析为纯域名的行；
+1. 下载上游订阅表中的「规则1'」（[adblockdnslite.txt](https://raw.githubusercontent.com/217heidai/adblockfilters/dist/adblockdnslite.txt)，Lite 版仅针对国内域名拦截，每 8 小时更新）；
+2. 解析 `||example.com^`（屏蔽）与 `@@||example.com^`（白名单）两类规则，只保留可解析为纯域名的行；并读取 `scripts/whitelist.txt` 中的本地补充白名单，与源列表白名单合并（两者都参与后续所有剔除逻辑）；
 3. `ad-domains.txt` 从屏蔽列表中剔除（如果存在）：
    - 与白名单条目**完全相同**的域名（如 `sax.sina.com.cn`）；
    - 白名单条目的**子域名**；
@@ -51,14 +51,26 @@ https://raw.githubusercontent.com/aisubing/ad-domains/main/output/ad-whitelist.t
 | --- | --- |
 | `output/ad-domains.txt` | 纯域名屏蔽列表，仅剔除与白名单直接冲突的条目 |
 | `output/ad-domainslite.txt` | Lite 版：白名单域名同主域的屏蔽条目已全部移除（更保守、误杀更少） |
-| `output/ad-whitelist.txt` | 源列表中的白名单域名（供支持例外列表的工具使用） |
+| `output/ad-whitelist.txt` | 源列表白名单与本地补充白名单的并集（供支持例外列表的工具使用） |
 | `output/stats.json` | 源版本号、各阶段计数、被剔除域名与白名单主域明细 |
+
+## 本地补充白名单
+
+`scripts/whitelist.txt` 用于补充上游列表未声明的白名单域名（例如不想被误杀的国内服务）。每行一个域名，支持：
+
+- 纯域名：`music.163.com`
+- Adblock 规则形式：`||music.163.com^` 或 `@@||music.163.com^`（`$` 选项会被忽略）
+- 以 `#` 或 `!` 开头的注释行，以及行尾 `#` 注释
+
+合并后的白名单参与标准版 / Lite 版的全部剔除逻辑（完全相同、子域名、父域名、同主域），`output/ad-whitelist.txt` 也会包含这些域名。条目无法解析为合法域名时任务会直接失败并指出行号，避免白名单被静默忽略。
+
+修改该文件并 push 会触发一次同步（workflow 监听 `scripts/**`）。
 
 ## 每日自动同步
 
 GitHub Actions 定时任务（见 [.github/workflows/sync.yml](.github/workflows/sync.yml)）：
 
-- 每天北京时间 **02:00**（UTC 18:00）自动运行，**仅当域名内容有变化时才提交**（首行时间标识随内容更新刷新，无变化的日子不产生提交）；
+- 每天北京时间 **02:00**（UTC 18:00）自动运行，**仅当输出有变化时才提交**（域名内容变化，或源地址等统计元信息变化；首行时间标识随内容更新刷新，无变化的日子不产生提交）；
 - 也支持手动触发：仓库页面 **Actions → Sync Domains → Run workflow**；
 - 修改脚本或 workflow 后 push 也会自动运行一次，便于验证改动。
 
@@ -79,6 +91,7 @@ python scripts/extract_domains.py <file>    # 使用本地文件作为源（离�
 ad-domains/
 ├── .github/workflows/sync.yml   # 每日定时同步
 ├── scripts/extract_domains.py   # 提取与过滤脚本
+├── scripts/whitelist.txt        # 本地补充白名单
 └── output/                      # 生成的纯域名列表（自动提交）
 ```
 

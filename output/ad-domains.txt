@@ -1,4 +1,4 @@
-# Updated: 2026-11-25 01:54 UTC | Domains: 5871 | Source version: 20261125085348-19b17e5
+# Updated: 2026-11-25 03:06 UTC | Domains: 5850 | Source version: 20261125104920-4ef1ef7
 0001-metrics1-drcn-dt-dbankcloud-cn.geac.dbankedge.cn
 0002-metrics1-drcn-dt-dbankcloud-cn.geac.dbankedge.cn
 027dir.com
@@ -48,7 +48,6 @@
 1500020991.vodplayer.wxamedia.com
 1500022744.vodplayer.wxamedia.com
 1500026601.vodplayer.wxamedia.com
-163ns.com
 165tchuang.com
 168.it168.com
 16aq.cn
@@ -266,7 +265,6 @@ abtest.alibaba.com
 abtest.todesk.com
 abtest3-misc-hl.zijieapi.com
 abtest3-misc-lf.zijieapi.com
-ac.dun.163yun.com
 ac.o2.qq.com
 ac1.pingpingw.com
 acc.3gbizhi.com
@@ -1045,7 +1043,6 @@ api.hybrid.xiaomi.com
 api.hzsanjiaomao.com
 api.immomo.com
 api.installer.xiaomi.com
-api.iplay.163.com
 api.itaoxiaoshuo.com
 api.jietuhb.com
 api.jr.mi.com
@@ -1535,7 +1532,6 @@ chanet.com.cn
 changyan.sohu.com
 changyi21.cn
 channel-analysis-js.gmw.cn
-channel.m.163.com
 chaoku.oss-cn-chengdu.aliyuncs.com
 chat.quickcep.com
 chat1.jd.com
@@ -1577,11 +1573,7 @@ clickm.fang.com
 clickn.fang.com
 client-api.ele.me
 client-monitor.tantanapp.com
-clientlog.music.163.com
 clientlog.wanmei.com
-clientlog3.music.163.com
-clientlogdep.music.163.com
-clientlogsf.music.163.com
 clkservice.youdao.com
 clog.miguvideo.com
 clog.tanshudata.com
@@ -1689,7 +1681,6 @@ corp.meitu.com
 count.7m.com.cn
 count.candou.com
 count.enet.com.cn
-count.mail.163.com
 count.pcauto.com.cn
 count.vrs.sohu.com
 count.west263.com
@@ -1699,7 +1690,6 @@ counter.sina.com.cn
 counter.yesky.com
 countly.dev.chnapss.com
 countly.growatt.com
-countly.mail.163.com
 countpvn.light.fang.com
 countubn.light.soufun.com
 cp.7y7.com
@@ -2204,7 +2194,6 @@ fc-feed.cdn.bcebos.com
 fc.3dmgame.com
 fclick.baidu.com
 fclog.baidu.com
-fcount-api.webapp.163.com
 fdfda.zhuzhai.com
 fds.api.moji.com
 fe-go.letv.com
@@ -2277,7 +2266,6 @@ fp-it.fengkongcloud.com
 fp-na-it-acc.fengkongcloud.com
 fp-sa-it-acc.fengkongcloud.com
 fp-sa-it.fengkongcloud.com
-fp-upload.dun.163.com
 fp.nanrenwo.net
 fpb.sohu.com
 fpb1.apple886.com
@@ -2620,7 +2608,6 @@ httpdns.huaweicloud.com
 httpdns.kg.qq.com
 httpdns.kwd.inkuai.com
 httpdns.meituan.com
-httpdns.music.163.com
 httpdns.n.netease.com
 httpdns.n.shifen.com
 httpdns.ocloud.heytapmobi.com
@@ -2785,12 +2772,9 @@ ipinyou.com
 ipinyou.com.cn
 iplogger.cn
 ipv4.kkmh.com
-ipv4.music.163.com
 ipv6.kg.qq.com
 iq.tv.global.mi.com
 iqiyim.adtrack.enlightent.cn
-ir-sdk.dun.163.com
-ir-sdk.dun.163yun.com
 ir-sdk.guardease.com
 ir.mail.126.com
 ir.mail.yeah.net
@@ -3666,7 +3650,6 @@ neirong.funshion.com
 nejmqianyan.cn
 net.daraz.lk
 net.daraz.pk
-netapm.music.163.com
 netstat.yunnan.cn
 networkbench.com
 new.915yzt.cn
@@ -3773,7 +3756,6 @@ omni.australia.cn
 oneapm.com
 onelnk.com
 onezapp.com
-online-logger.webapp.163.com
 online.hnoexpo.com
 online.sh.cn
 onrt-stsdk.vivo.com.cn
@@ -4153,7 +4135,6 @@ qyxrwl.com
 r.51wnl-cq.com
 r.browser.miui.com
 r.dmp.sina.cn
-r.mail.163.com
 r.sg.sec.miui.com
 r7988-8t7jb6-u-1324992141.cos.ap-jakarta.myqcloud.com
 rabc1.iteye.com
@@ -4489,7 +4470,6 @@ sentry.kuaishou.com
 sentry.meitu-int.com
 sentry.meitu-int.com.c.vedcdnlb.com
 sentry.monitoring.ugnas.com
-sentry.music.163.com
 sentry.netease.com
 sentry.oihlecz.com.whecloud.com
 sentry.qt.qq.com
@@ -5722,7 +5702,6 @@ ydgsvls.cn
 ydjs.zol.com.cn
 ydmob.com
 ydpushserver.youdao.com
-ye.dun.163yun.com
 yemnn.cn
 yeql3hzbd.com
 yfghrey-1433552157.cos.ap-hongkong.myqcloud.com
