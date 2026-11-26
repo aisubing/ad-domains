@@ -1,22 +1,22 @@
 {
   "source_url": "https://raw.githubusercontent.com/217heidai/adblockfilters/dist/adblockdnslite.txt",
-  "source_version": "20261125104920-4ef1ef7",
-  "source_last_modified": "2026/11/25 10:49:20",
-  "generated_at": "2026-11-25T03:06:38Z",
+  "source_version": "20261126023254-4ef1ef7",
+  "source_last_modified": "2026/11/26 02:32:54",
+  "generated_at": "2026-11-26T01:34:15Z",
   "counts": {
-    "source_lines": 5902,
+    "source_lines": 5801,
     "skipped_lines": 0,
-    "blocked": 5877,
-    "whitelist": 23,
-    "whitelist_from_source": 15,
+    "blocked": 5777,
+    "whitelist": 22,
+    "whitelist_from_source": 14,
     "whitelist_from_local": 8,
     "whitelist_local_added": 8,
     "removed_exact": 7,
     "removed_subdomain": 18,
     "removed_parent": 2,
-    "final_domains": 5850,
-    "lite_domains": 5595,
-    "removed_related": 282
+    "final_domains": 5750,
+    "lite_domains": 5500,
+    "removed_related": 277
   },
   "removed": {
     "exact": [
@@ -62,7 +62,6 @@
     "doubleclick.net",
     "douyu.com",
     "googleadservices.com",
-    "ifengimg.com",
     "kf5.com",
     "lenovo.com",
     "mmstat.com",
