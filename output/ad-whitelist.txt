@@ -1,4 +1,4 @@
-# Updated: 2026-11-26 01:34 UTC | Domains: 22 | Source version: 20261126023254-4ef1ef7
+# Updated: 2026-11-28 01:05 UTC | Domains: 23 | Source version: 20261128015906-e972684
 163ns.com
 5471782.fls.doubleclick.net
 acs-m.daraz.pk
@@ -21,3 +21,4 @@ trk.ecomm.lenovo.com
 wan.douyu.com
 webapp.163.com
 www.googleadservices.com
+x2.ifengimg.com
